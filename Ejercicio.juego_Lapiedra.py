@@ -37,3 +37,36 @@ o Eliminar 5 piedras, dejando3 piedras en el tablero.P2 luego quita el piedras r
 y gana el juego.
 Todos los movimientos posibles dan como resultado victoria.
 """
+def gameOfStones(n):
+    if n == 2 or 3 or 4 or 5 or 6:
+        print("El ganador del juego es el jugador numero 1")
+    elif (n-2) == 6:
+        print("El ganador es el jugador numero 2")
+print(gameOfStones(8))    
+"""""
+• Si n=7,P1 puede realizar cualquiera de los siguientes tres movimientos:
+o Eliminar 2 piedras, dejando 5 piedras en el tablero. P2 luego quita piedras, ganando el
+juego.   #P2 GANA
+o Eliminar 3 piedras , dejando 4 piedras en el tablero. P2 luego quita piedras,
+dejando piedra dejada en el tablero y ganando el juego.   #P2 GANA
+o Eliminar 5 piedras, dejando3 piedras en el tablero.P2 luego quita el piedras restantes
+y gana el juego. P2 GANA
+si n=8, P1 puede:
+O bien eliminar 2 piedras, en cuyo caso quedan 6 y P2 quita 2. quedan 4 piedras y P1 quita 3:No hay manera de que P2 gane #P1 GANA
+O bien eliminar 3 piedras, en cuyo caso quedan 5 y P2 gana #P2 GANA
+O bien eliminar 5 piedras, en cuyo caso quedan 3 piedras y P2 gana  #P2 GANA
+Si n=9, P1 puede:
+O bien eliminar 2 piedras, en cuyo caso quedan 7 piedras y P2 quita 2 piedras y quedan 5 piedras, entonces P1 quita 5 y gana #P1 GANA
+O bien eliminar 3 piedras, en cuyo caso quedan 6 piedras y P2 quita 5 piedras y gana. #P2 GANA
+O bien eliminar 5 piedras, en cuyo caso quedan 4 piedras y P2 quita 3 piedras y gana #P2 GANA
+Si n=10, P1 puede:
+O bien eliminar 2 piedras, en cuyo caso quedan 8 piedras y P2 no puede ganar #P1 GANA
+O bien eliminar 3 piedras, en cuyo caso quedan 7 piedras y P2 no puede ganar  #P1 GANA
+O bien eliminar 5 piedras, en cuyo caso quedan 5 piedras y P2 gana  #P2 GANA
+Si n=11, P1 puede;
+O bien eliminar 2 piedras, en cuyo caso quedan 9 piedras y P2 quita 2 piedras y quedan 7 piedras, entonces P1 no puede ganar  #P2 GANA
+O bien eliminar 3 piedras, en cuyo caso quedan 8 piedras y P2 no puede ganar   #P1 GANA
+O bien eliminar 5 piedras, en cuyo caso quedan 6 piedras y P2 quita 5 piedras y gana  #P2 GANA
+Si n=12, P1 puede:
+O bien eliminar 2 piedras, em cuyo caso quedan 10 piedras y P2 quita  
+"""
