@@ -38,11 +38,12 @@ y gana el juego.
 Todos los movimientos posibles dan como resultado victoria.
 """
 def gameOfStones(n):
+    if (n-2) or (n-3) or (n-5) == 6:
+        return "El ganador es el jugador numero 2"
     if n == 2 or 3 or 4 or 5 or 6:
-        print("El ganador del juego es el jugador numero 1")
-    elif (n-2) == 6:
-        print("El ganador es el jugador numero 2")
-print(gameOfStones(8))    
+        return "El ganador del juego es el jugador numero 1"
+    if 
+print(gameOfStones())    
 """""
 • Si n=7,P1 puede realizar cualquiera de los siguientes tres movimientos:
 o Eliminar 2 piedras, dejando 5 piedras en el tablero. P2 luego quita piedras, ganando el
