@@ -71,3 +71,50 @@ O bien eliminar 5 piedras, en cuyo caso quedan 6 piedras y P2 quita 5 piedras y 
 Si n=12, P1 puede:
 O bien eliminar 2 piedras, em cuyo caso quedan 10 piedras y P2 quita  
 """
+#otra idea
+def bucle(t, n):
+    k = int(input("Jugador 1,seleccione 2, 3 o 5 piedras a eliminar:"))
+    for k in k:t
+    n - k
+
+def bucle2(o, n, t):
+    L = int(input("Jugador 2,Seleccione 2, 3 o 5 piedras a eliminar:"))
+    for L in L:o
+    bucle(t, n) - L
+
+def GameOfStones(n, t, o):
+    resta = bucle(t, n)
+    while True:
+        if resta == 0:
+           print("Jugador 1 gana")
+           break
+        elif resta == 1:
+           print("Jugador 1 gana")
+           break
+        else:
+            resta1 = bucle2(o, n, t)
+            if resta1 == 0:
+                print("Jugador 2 gana")
+            elif resta1 == 1:
+                print("Jugador 2 gana")
+                break
+            else:                
+                continue
+print(GameOfStones(12, 100, 100))
+#otra idea
+def gameOfStones(n):
+    while True:
+        Num_piedras = print(input("Jugador1, Selecciones el numero de piedras a eliminar:"))
+        k = sum(Num_piedras)
+        k1 = sum(Num_piedras, Num_piedras1)
+        if  (n-k) != 8:
+            Num_piedras1 = print(input("Jugador2, Selecciones el numero de piedras a eliminar:"))
+        else:
+            print("Jugador 1 ha ganado")
+            break
+        if (n - k1) != 8:
+           Num_piedras
+        else:
+            print("Jugador 2 ha ganado")
+            break
+print(gameOfStones(12))
