@@ -55,12 +55,18 @@ import random
 import re
 import sys
 
-first_multiple_input = input().rstrip().split()
+first_multiple_input = input("ingrese un numero:").rstrip().split()
 n = int(first_multiple_input[0])
 m = int(first_multiple_input[1])
 k = int(first_multiple_input[2])
 for n_itr in range(n):
     row = input()
+#Escribamos que sucede en cada caso
+    O = print("Aqui se encuentra un obstaculo, vuelve a la celda anterior")
+    M = print("Aqui se encuentra una mina, Game Over")
+    S = print("Aqui se encuentra una salida, Felicidades")
+    B = print("Aqui se encuentra una celda libre, puede continuar")
+
 # Write your code here
 # #significa obstaculo; A una celda libre; M una mina; % una salida; y B una celda libre puede que con una entrada a un tunel
 for k_itr in range(k):
