@@ -27,9 +27,41 @@ valores respectivos al desafío a .
 La segunda línea contiene 3 números enteros separados por espacios, b [0] , b [1] , y b [2] , los valores
 respectivos al desafío b .
 """
-Categorias = ["Claridad del problema", "Originalidad", "Dificultad"]
-
-if a == Categorias:
-    if b == Categorias
+class Calificacion:
+    def __init__(self, Claridad_del_problema, Originalidad, Dificultad):
+        self.Claridad_del_problema = Claridad_del_problema
+        self.Originalidad = Originalidad
+        self.Dificultad = Dificultad
+    def Comparacion(self, other):
+        Lucia = 0
+        Carlos = 0
+        if self.Claridad_del_problema > other.Claridad_del_problema:
+           print("Lucia gana 1 punto")
+           Lucia = Lucia + 1
+        elif self.Claridad_del_problema < other.Claridad_del_problema:
+           print("Carlos gana 1 punto")
+           Carlos = Carlos + 1
+        else:
+           print("Ninguno gana puntos")
+        if self.Originalidad > other.Originalidad:
+           print("Lucia gana 1 punto")
+           Lucia = Lucia + 1
+        elif self.Originalidad < other.Originalidad:
+           print("Carlos gana 1 punto")
+           Carlos = Carlos + 1
+        else:
+           print("Ninguno gana puntos")
+        if self.Dificultad > other.Dificultad:
+           print("Lucia gana 1 punto")
+           Lucia = Lucia + 1
+        elif self.Dificultad < other.Dificultad:
+           print("Carlos gana 1 punto")
+           Carlos = Carlos + 1
+        else:
+           print("Ninguno gana puntos")
+        return ("Lucia: ", Lucia, "Carlos: ", Carlos)
+Lucia = Calificacion(17, 28, 30)
+Carlos = Calificacion(99, 16, 8)
+print(Lucia.Comparacion(Carlos))
          
         

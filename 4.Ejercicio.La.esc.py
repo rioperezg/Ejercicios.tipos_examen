@@ -21,6 +21,6 @@ Salida de muestra
 def staircase(n):
     "n es el numero de escalones"
     for i in range(1, n+1):
-        print(" "*(n-i) + "#"*i)
+        print(" "*(n-i) + "# "*i)
     return None
-print(staircase(5))
+print(staircase(150))
