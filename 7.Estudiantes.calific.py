@@ -33,19 +33,19 @@ Estudiante 4 recibió 33 una calificación por debajo de 40, por lo que la calif
 calificación final del estudiante es 33 .
 """
 def Grading_Students(Grades):
-    for Grades in Grades:
-        if Grades < 40:
-            print("Su nota es inferior a 40, Ha suspendido")
-        else:
-            n = int(0 < n < 100)
-            K = n // 5
-            for i in range(K):
-                multiplos_5 = 5*i
-                num = multiplos_5 > Grades
-                if (Grades - num) < 3:
-                    Grades = num
-                    print("su nota es {}, Ha aprobado".format(num))
+    #Primero de todo diferenciemos entre una calificacion suspensa y una que no lo es
+    if Grades < 40:
+        return("El alumno ha suspendidido")
+    else:
+    #Y ahora continuamos con el caso del aprobado. Necesitamos un metodo que considere los numeros que son multiplos de 5
+    #Para empezar pasaremos dicho numero por un entero. Pasemos el numero como si fuera un rango de 40 a 100 ya que es la maxima
+    #Puntuacion
+        for i in range(40, 100):
+            if i % 5:
+                if i - Grades == + 3:
+                   return("El alumno tiene", i,"de nota")
                 else:
-                    print("Su nota es {}, Ha aprobado".format(Grades))
-Grades1 = [94, 73, 67, 38, 33]
-print(Grading_Students(Grades1))
+                   return("El alumno tiene", Grades,"de  nota")
+            else:
+                continue
+print(Grading_Students(54))
