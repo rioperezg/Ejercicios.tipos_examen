@@ -64,3 +64,34 @@ O bien eliminar 5 piedras, en cuyo caso quedan 6 piedras y P2 quita 5 piedras y 
 Si n=12, P1 puede:
 O bien eliminar 2 piedras, em cuyo caso quedan 10 piedras y P2 quita  
 """
+#.Puedes quitar 2, 3 o 5 piedras. Al final el jugador pierde el juego si en su turno quedan 0 o 1 piedra
+#hagamoslo con inputs. Primero cuantes piedras iniciales. Crearemos dos bucles while que corresponderan a cada uno de los jugadores
+N = int(input("Numero de piedras inicial: "))
+while True:
+    turnos = []
+    Turno_1 = int(input("P1, Cuantas piedras quiere quitar: "))
+    #Ademas creamos una lista para ir sumando los numeros correspondientes a los turnos
+    turnos.append(Turno_1)
+    #suma_Turnos = sum(turnos)
+    if int(sum(turnos)) - int(N) == 1:
+        print("P1 win")
+        break
+    elif int(sum(turnos)) - int(N) == 0:
+        print("P1 win")
+        break
+    else:
+        #turnos.append(Turno_1)
+        #Pied_rest = N - sum(turnos)
+        Turno_2 = int(input("P2, Cuantas piedras quiere quitar: "))
+        turnos.append(Turno_2)
+        if int(sum(turnos)) - int(N) == 1:
+            print("P2 win")
+            break
+        elif int(sum(turnos)) - int(N) == 0:
+            print("P2 win")
+            break
+        else:
+            continue
+
+
+
