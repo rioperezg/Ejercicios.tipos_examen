@@ -23,4 +23,4 @@ def staircase(n):
     for i in range(1, n+1):
         print(" "*(n-i) + "# "*i)
     return None
-print(staircase(150))
+print(staircase(10))
