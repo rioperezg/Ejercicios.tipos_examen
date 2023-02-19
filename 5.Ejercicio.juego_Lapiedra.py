@@ -73,10 +73,13 @@ while True:
     #Ademas creamos una lista para ir sumando los numeros correspondientes a los turnos
     turnos.append(Turno_1)
     #suma_Turnos = sum(turnos)
-    if int(sum(turnos)) - int(N) == 1 or 0:
+    if int(N) - int(sum(turnos)) == 1:
         print("P1 win")
         break
-    elif int(sum(turnos)) - int(N) < 0:
+    elif int(N) - int(sum(turnos)) == 0:
+        print("P1 win")
+        break
+    elif int(N) - int(sum(turnos)) < 0:
         print("Ha superado el numero de piedras posibles")
         pass
     # elif int(sum(turnos)) - int(N) == 0:
@@ -87,10 +90,13 @@ while True:
         #Pied_rest = N - sum(turnos)
         Turno_2 = int(input("P2, Cuantas piedras quiere quitar: "))
         turnos.append(Turno_2)
-        if int(sum(turnos)) - int(N) == 1 or 0:
+        if int(N) - int(sum(turnos)) == 1:
             print("P2 win")
             break
-        elif int(sum(turnos)) - int(N) < 0:
+        elif int(N) - int(sum(turnos)) == 0:
+            print("P2 win")
+            break
+        elif int(N) - int(sum(turnos)) < 0:
             print("Ha superado el numero de piedras posibles")
             pass
         # elif int(sum(turnos)) - int(N) == 0:
